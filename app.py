@@ -17,7 +17,7 @@ if not TELEBOT_API_KEY or not GEMINI_API_KEY:
 # Initialize the bot and Gemini
 bot = TeleBot(TELEBOT_API_KEY)
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Define the context for the bot
 SYSTEM_PROMPT = """You are a knowledgeable Web3 and blockchain education assistant. 
